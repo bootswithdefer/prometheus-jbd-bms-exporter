@@ -1,0 +1,8 @@
+services:
+  prometheus-jbd-exporter:
+    image: prometheus-jbd-exporter
+    restart: always
+    devices:
+      - "/dev/ttyUSB1:/dev/ttyUSB0"
+    ports:
+      - "9733:8080"
